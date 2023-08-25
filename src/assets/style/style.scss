@@ -1,0 +1,29 @@
+@import './fonts';
+@import 'var';
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: linear-gradient(180deg, #aea4e3, #639c9f) no-repeat;
+	// background: url('favicon.ico');
+	color: rgb(255, 255, 255);
+	user-select: none;
+	min-height: 100Vh;
+}
+
+li {
+	list-style-type: none;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.container {
+	width: 100%;
+	max-width: 1860px;
+	padding: 0 10px;
+	margin: 0 auto;
+}

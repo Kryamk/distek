@@ -1,0 +1,146 @@
+.heroTop{
+	padding: 23px 35px 40px;
+	border-radius: 20px;
+	background: var(--gray-scale-sixtary, #FFF);
+}
+.titleWrap {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px 50px;
+}
+.title {
+	max-width: 850px;
+	color: var(--gray-scale-primary, #393838);
+	font-family: Montserrat;
+	font-size: 55px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 100%;
+	letter-spacing: -0.55px;
+}
+.subTitle {
+	width: 160px;
+	flex-shrink: 0;
+	color: var(--gray-scale-tetriary, #8A8B94);
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
+	font-variant: all-small-caps;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 55px;
+	margin-top: 86px;
+}
+.item {}
+.link {
+	display: flex;
+	align-items: center;
+}
+.logoWrap {
+	width: max-content;
+	padding: 4px 15px;
+	border-radius: 100px;
+	background: var(--gray-scale-quinary, #F1F1F1);
+	margin-right: 10px;
+}
+.logo {
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.text {
+	color: var(--brand-blue-primary-light, #197ACF);
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 95%;
+	font-variant: all-small-caps;
+	margin-right: 7px;
+}
+.arrow {
+	width: 20px;
+	height: 20px;
+	fill: var(--brand-blue-primary-light, #197ACF);
+}
+
+@media (max-width: 1199px) {
+	.heroTop{
+		padding: 20px 20px 18px;
+		border-radius: 16px;
+	}
+	.title {
+		max-width: 700px;
+		font-size: 40px;
+		line-height: 90%;
+		letter-spacing: -0.4px;
+	}
+	.list {
+		gap: 20px 0
+	}
+	.item {
+		width: 50%;
+	}
+	.logoWrap {
+		padding: 3px 12px;
+		margin-right: 8px;
+	}
+	.logo {
+		width: 17px;
+		height: 17px;
+	}
+	.text {
+		font-size: 16px;
+		line-height: 92%;
+	}
+	.arrow {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+@media (max-width: 991px) {
+	.titleWrap {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.subTitle {
+		width: auto;
+	}
+}
+
+@media (max-width: 743px) {
+	.heroTop{
+		padding: 10px 10px 16px;
+		border-radius: 8px;
+		background: var(--gray-scale-sixtary, #FFF);
+	}
+	.titleWrap {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.title {
+		max-width: 500px;
+		font-size: 27px;
+		line-height: 100%;
+		letter-spacing: -0.27px;
+	}
+	.subTitle {
+		font-size: 16px;
+		line-height: 100%;
+	}
+
+}
+
+@media (max-width: 575px) {
+	.list {
+		flex-direction: column;
+	}
+	.item {
+		width: auto;
+	}
+}
