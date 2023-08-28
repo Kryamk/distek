@@ -1,9 +1,15 @@
 import React from 'react'
 import sl from './Hero.module.scss'
+import { Accordion } from './Accordion/Accordion'
 import ArrorCorner from '../../assets/img/arr-corner.svg'
 import LogoSketchup from '../../assets/img/logo-sketchup.svg'
-import Envelope from '../../assets/img/envelope.svg'
-import { Accordion } from '../Accordion/Accordion'
+import LogoTekla from '../../assets/img/logo-tekla.svg'
+import LogoTrimble from '../../assets/img/logo-trimble.svg'
+import IconEnvelope from '../../assets/img/envelope.svg'
+import IconNumberOne from '../../assets/img/Number-One.svg'
+import IconNumberTwo from '../../assets/img/Number-Two.svg'
+import IconArrowInCircle from '../../assets/img/arr-in-circle.svg'
+import imgAnim from '../../assets/img/main-screen-animation-1.gif'
 
 const advList = [
 	{
@@ -35,7 +41,7 @@ const advList = [
 export default function Hero() {
 	return (
 		<section>
-			<div className="container">
+			<div className="container" >
 
 				<div className={sl.heroTop}>
 					<div className={sl.titleWrap}>
@@ -55,7 +61,7 @@ export default function Hero() {
 						<li className={sl.item}>
 							<a className={sl.link} href="#">
 								<div className={sl.logoWrap}>
-									<LogoSketchup className={sl.logo} />
+									<LogoTekla className={sl.logo} />
 								</div>
 								<span className={sl.text}>Tekla structures</span>
 								<ArrorCorner className={sl.arrow} />
@@ -64,7 +70,7 @@ export default function Hero() {
 						<li className={sl.item}>
 							<a className={sl.link} href="#">
 								<div className={sl.logoWrap}>
-									<LogoSketchup className={sl.logo} />
+									<LogoTekla className={sl.logo} />
 								</div>
 								<span className={sl.text}>Tekla model sharing</span>
 								<ArrorCorner className={sl.arrow} />
@@ -73,7 +79,7 @@ export default function Hero() {
 						<li className={sl.item}>
 							<a className={sl.link} href="#">
 								<div className={sl.logoWrap}>
-									<LogoSketchup className={sl.logo} />
+									<LogoTrimble className={sl.logo} />
 								</div>
 								<span className={sl.text}>Trimble connect</span>
 								<ArrorCorner className={sl.arrow} />
@@ -83,28 +89,55 @@ export default function Hero() {
 				</div>
 
 				<div className={sl.heroBottom}>
-					<div className={sl.col}>
+					<div className={`${sl.col} ${sl.colPartners}`}>
+
+						<div className={sl.imgWrap}>
+							<img className={sl.img} src={imgAnim} alt="" />
+						</div>
+
 						<div className={sl.colHeader}>
-							<div className={sl.num}></div>
-							<h3 className={sl.colTitle}>партнерам и вендорам</h3>
-							<div className={sl.mail}>
-								<Envelope className={sl.mailIcon}/>
-								<a className={sl.mailLink} href="mailto:info@distek.ru">info@distek.ru</a>
+							<div className={sl.colNum}>
+								<IconNumberOne className={sl.colNumIcon} />
+							</div>
+							<div className={sl.colHeaderInner}>
+								<h3 className={sl.colTitle}>партнерам и вендорам</h3>
+								<a className={sl.colMail} href="mailto:info@distek.ru" >
+									<IconEnvelope className={sl.colMailIcon} />
+									<div className={sl.colMailText} >info@distek.ru</div>
+								</a>
 							</div>
 						</div>
-						<div className={sl.advantages}>
-							<Accordion advList={advList} />
+
+						<div className={sl.colBody}>
+							<div className={sl.advantages}>
+								<div className={sl.advantagesTitle}>Преимущества</div>
+								<Accordion advList={advList} />
+							</div>
 						</div>
+
 
 					</div>
 
-
-
-
-
-
-					<div className={sl.users}></div>
+					<div className={`${sl.col} ${sl.colUsers}`}>
+						<div className={sl.colHeader}>
+							<div className={sl.colNum}>
+								<IconNumberTwo className={sl.colNumIcon} />
+							</div>
+							<div className={sl.colHeaderInner}>
+								<h3 className={sl.colTitle}>Пользователям</h3>
+								<div className={sl.colText}>Подберите программные продукты для&#160;моделирования конструкции и&#160;визуализации проектов</div>
+							</div>
+						</div>
+						<div className={sl.colBody}>
+							<a className={sl.colLink} href='#'>
+								<IconArrowInCircle className={sl.colLinkIcon} />
+								<div className={sl.colLinkText}>подробнее о решениях для ваших задач</div>
+							</a>
+						</div>
+					</div>
 				</div>
+
+
 
 			</div>
 		</section>

@@ -1,10 +1,9 @@
-
-
 .headerWrap {
-	padding: 10px 0;
+	margin: 15px 0;
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	justify-content: space-between;
+	gap: 11px;
 }
 .headerLeft {
 	display: flex;
@@ -23,8 +22,8 @@
 
 .navList {
 	display: flex;
-	// gap: 10px calc(80/1920*100vw);
-	gap: 10px 80px;
+	gap: 10px calc(75/1920*100vw);
+	// gap: 10px 75px;
 	flex-wrap: wrap;
 }
 .navItem:hover .navText {
@@ -112,6 +111,9 @@
 
 
 @media (max-width: 1199px) {
+	.headerWrap {
+		margin: 10px 0;
+	}
 	.headerLeft {
 		padding: 5px 20px;
 	}
@@ -120,5 +122,15 @@
 	}
 	.nav {
 		display: none;
+	}
+}
+@media (max-width: 743px) {
+	.headerLeft {
+		padding: 5px 10px;
+	}
+	.btn {
+		flex-grow: 1;
+		width: auto;
+		max-width: 232px;
 	}
 }

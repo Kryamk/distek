@@ -29,7 +29,7 @@ module.exports = {
 		// },
 		filename: '[name].bundle.[contenthash].js',
 		assetModuleFilename: 'assets/images/[name][ext]',
-		
+
 	},
 	resolve: {
 		extensions: ['.tsx', '.ts', '.js', '.json', '.*.module.scss', '.jsx', '.d.ts']
