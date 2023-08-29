@@ -17,7 +17,7 @@ const advList = [
 		a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius accusamus cumque officiis, tempora ipsa a.",
 	},
 	{
-		q: "Поддержка при работе с заказчиками",
+		q: "Поддержка при работе с\u00A0заказчиками",
 		a: "Lorem ipsum dolor sit amet sewad elit. Eius accusamus cumque officiis, tempora. Lorem ipsum dolor sit amet edo bere",
 	},
 	{
@@ -91,10 +91,6 @@ export default function Hero() {
 				<div className={sl.heroBottom}>
 					<div className={`${sl.col} ${sl.colPartners}`}>
 
-						<div className={sl.imgWrap}>
-							<img className={sl.img} src={imgAnim} alt="" />
-						</div>
-
 						<div className={sl.colHeader}>
 							<div className={sl.colNum}>
 								<IconNumberOne className={sl.colNumIcon} />
@@ -106,6 +102,10 @@ export default function Hero() {
 									<div className={sl.colMailText} >info@distek.ru</div>
 								</a>
 							</div>
+						</div>
+
+						<div className={sl.imgWrap}>
+							<img className={sl.img} src={imgAnim} alt="" />
 						</div>
 
 						<div className={sl.colBody}>
@@ -125,13 +125,13 @@ export default function Hero() {
 							</div>
 							<div className={sl.colHeaderInner}>
 								<h3 className={sl.colTitle}>Пользователям</h3>
-								<div className={sl.colText}>Подберите программные продукты для&#160;моделирования конструкции и&#160;визуализации проектов</div>
+								<div className={sl.colText}>Подберите программные продукты для&nbsp;моделирования конструкции и&#160;визуализации проектов</div>
 							</div>
 						</div>
 						<div className={sl.colBody}>
 							<a className={sl.colLink} href='#'>
 								<IconArrowInCircle className={sl.colLinkIcon} />
-								<div className={sl.colLinkText}>подробнее о решениях для ваших задач</div>
+								<div className={sl.colLinkText}>подробнее о решениях для ваших&nbsp;задач</div>
 							</a>
 						</div>
 					</div>

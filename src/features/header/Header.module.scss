@@ -18,41 +18,10 @@
 .logoLink {}
 .logo {
 	display: block;
+	max-width: 100%;
 }
 
-.navList {
-	display: flex;
-	gap: 10px calc(75/1920*100vw);
-	// gap: 10px 75px;
-	flex-wrap: wrap;
-}
-.navItem:hover .navText {
-	color: var(--brand-blue-primary-light, #197ACF);
-}
-.navItem:hover .navIcon {
-	fill: var(--brand-blue-primary-light, #197ACF);
-}
-.navLink {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-.navText {
-	color: var(--gray-scale-primary, #393838);
-	font-family: Roboto;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 95%;
-	font-variant: all-small-caps;
-	transition: color .3s ease-in-out;
-}
-.navIcon {
-	fill: #393838;
-	width: 20px;
-	height: 20px;
-	transition: fill .3s ease-in-out;
-}
+
 
 
 .btn {
@@ -119,9 +88,6 @@
 	}
 	.logo {
 		width: 93px;
-	}
-	.nav {
-		display: none;
 	}
 }
 @media (max-width: 743px) {

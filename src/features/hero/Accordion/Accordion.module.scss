@@ -30,6 +30,7 @@
 	justify-content: space-between;
 	padding: 5px 10px 20px 25px;
 	cursor: pointer;
+	gap: 30px
 }
 
 .accordionHeader__text {
@@ -98,6 +99,13 @@
 		column-gap: 30px;
 		grid-auto-flow: column;
 		grid-template-rows: repeat(3, max-content);
+		max-width: none;
+	}
+	.accordionHeader {
+		padding: 6px 10px 20px 15px;
+	}
+	.accordionBody {
+		padding: 0 9px 20px 15px;
 	}
 }
 

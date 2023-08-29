@@ -1,3 +1,11 @@
+:root {
+	--brand-blue-primary-light: #197ACF;
 
-$back: rgb(41, 9, 13);
-$text: rgb(212, 166, 166);
+	--gray-scale-primary: #393838;
+	--gray-scale-sixtary: #FFF;
+	--gray-scale-quaternary: #BDBEC1;
+	--additional-grayblue-additional-light: #E0EAF8;
+
+	--gradients-gradient-blue-button: linear-gradient(50deg, #30B3ED 0%, #299EE2 27.76%, #258BD7 55.69%, #44A1E0 78.00%, #51A8E3 100%);
+	--gradients-blue-button-hover: linear-gradient(315deg, #30B3ED 0%, #299EE2 27.76%, #258BD7 55.69%, #44A1E0 78.00%, #51A8E3 100%);
+}
