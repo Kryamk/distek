@@ -10,6 +10,7 @@ import IconNumberOne from '../../assets/img/Number-One.svg'
 import IconNumberTwo from '../../assets/img/Number-Two.svg'
 import IconArrowInCircle from '../../assets/img/arr-in-circle.svg'
 import imgAnim from '../../assets/img/main-screen-animation-1-large.gif'
+import LinkWithLogo from '../../components/LinkWithLogo/LinkWithLogo'
 
 const advList = [
 	{
@@ -50,40 +51,16 @@ export default function Hero() {
 					</div>
 					<ul className={sl.list}>
 						<li className={sl.item}>
-							<a className={sl.link} href="#">
-								<div className={sl.logoWrap}>
-									<LogoSketchup className={sl.logo} />
-								</div>
-								<span className={sl.text}>Sketchup</span>
-								<ArrorCorner className={sl.arrow} />
-							</a>
+							<LinkWithLogo variant='sketchup' />
 						</li>
 						<li className={sl.item}>
-							<a className={sl.link} href="#">
-								<div className={sl.logoWrap}>
-									<LogoTekla className={sl.logo} />
-								</div>
-								<span className={sl.text}>Tekla structures</span>
-								<ArrorCorner className={sl.arrow} />
-							</a>
+							<LinkWithLogo variant='tekla structures' />
 						</li>
 						<li className={sl.item}>
-							<a className={sl.link} href="#">
-								<div className={sl.logoWrap}>
-									<LogoTekla className={sl.logo} />
-								</div>
-								<span className={sl.text}>Tekla model sharing</span>
-								<ArrorCorner className={sl.arrow} />
-							</a>
+							<LinkWithLogo variant='tekla model' />
 						</li>
 						<li className={sl.item}>
-							<a className={sl.link} href="#">
-								<div className={sl.logoWrap}>
-									<LogoTrimble className={sl.logo} />
-								</div>
-								<span className={sl.text}>Trimble connect</span>
-								<ArrorCorner className={sl.arrow} />
-							</a>
+							<LinkWithLogo variant='trimble' />
 						</li>
 					</ul>
 				</div>

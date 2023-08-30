@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import sl from './HeaderNav.module.scss'
-import IconArrorCorner from '../../../assets/img/arr-corner.svg'
+import IconArrorCorner from '@assets/img/arr-corner.svg'
 import { useOutsideClickMenu } from '../../../hooks/useOutsideClickMenu'
 
 function HeaderNav({ openedMenu, onCloseMenu, burgerRef }) {

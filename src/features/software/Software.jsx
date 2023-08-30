@@ -1,15 +1,16 @@
 import React from 'react'
 import sl from './Software.module.scss'
-import ArrorCorner from '../../assets/img/arr-corner.svg'
-import LogoSketchup from '../../assets/img/logo-sketchup.svg'
-import LogoTekla from '../../assets/img/logo-tekla.svg'
-import LogoTrimble from '../../assets/img/logo-trimble.svg'
-import IconNumberOne from '../../assets/img/Number-One.svg'
-import IconNumberTwo from '../../assets/img/Number-Two.svg'
-import IconNumberThree from '../../assets/img/Number-Three.svg'
-import imgAnim3d from '../../assets/img/main-screen-animation-2.gif'
-import imgAnimDetail from '../../assets/img/main-screen-animation-3.gif'
-import imgAnimInfo from '../../assets/img/main-screen-animation-1.gif'
+import ArrorCorner from '@assets/img/arr-corner.svg'
+import LogoSketchup from '@assets/img/logo-sketchup.svg'
+import LogoTekla from '@assets/img/logo-tekla.svg'
+import LogoTrimble from '@assets/img/logo-trimble.svg'
+import IconNumberOne from '@assets/img/Number-One.svg'
+import IconNumberTwo from '@assets/img/Number-Two.svg'
+import IconNumberThree from '@assets/img/Number-Three.svg'
+import imgAnim3d from '@assets/img/main-screen-animation-2.gif'
+import imgAnimDetail from '@assets/img/main-screen-animation-3.gif'
+import imgAnimInfo from '@assets/img/main-screen-animation-1.gif'
+import LinkWithLogo from '../../components/LinkWithLogo/LinkWithLogo'
 
 
 
@@ -42,13 +43,7 @@ export default function Software() {
 						</div>
 
 						<div className={sl.links}>
-							<a className={sl.link} href="#">
-								<div className={sl.logoWrap}>
-									<LogoSketchup className={sl.logo} />
-								</div>
-								<span className={sl.text}>Sketchup</span>
-								<ArrorCorner className={sl.arrow} />
-							</a>
+							<LinkWithLogo variant='sketchup' />
 						</div>
 						<ul className={sl.descList}>
 							<li className={sl.descItem}>Быстрое, простое и качественное создание 3D-моделей любых объектов по чертежу, изображению, фотографии и&nbsp;т.д.</li>
@@ -72,20 +67,8 @@ export default function Software() {
 							<img className={sl.img} src={imgAnimDetail} alt="" />
 						</div>
 						<div className={sl.links}>
-							<a className={sl.link} href="#">
-								<div className={sl.logoWrap}>
-									<LogoTekla className={sl.logo} />
-								</div>
-								<span className={sl.text}>Tekla structures</span>
-								<ArrorCorner className={sl.arrow} />
-							</a>
-							<a className={sl.link} href="#">
-								<div className={sl.logoWrap}>
-									<LogoTekla className={sl.logo} />
-								</div>
-								<span className={sl.text}>Tekla model sharing</span>
-								<ArrorCorner className={sl.arrow} />
-							</a>
+							<LinkWithLogo variant='tekla structures' />
+							<LinkWithLogo variant='tekla model' />
 						</div>
 						<ul className={sl.descList}>
 							<li className={sl.descItem}>Создание информационной модели с высоким уровнем детализации (LOD 500)</li>
@@ -109,13 +92,7 @@ export default function Software() {
 							<img className={sl.img} src={imgAnimInfo} alt="" />
 						</div>
 						<div className={sl.links}>
-							<a className={sl.link} href="#">
-								<div className={sl.logoWrap}>
-									<LogoTrimble className={sl.logo} />
-								</div>
-								<span className={sl.text}>Trimble connect</span>
-								<ArrorCorner className={sl.arrow} />
-							</a>
+							<LinkWithLogo variant='trimble' />
 						</div>
 						<ul className={sl.descList}>
 							<li className={sl.descItem}>Совместная работа над проектом из любой точки мира</li>
@@ -128,6 +105,8 @@ export default function Software() {
 
 
 				</div>
+
+
 
 
 
