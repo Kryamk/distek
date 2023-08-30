@@ -9,7 +9,7 @@ import IconEnvelope from '../../assets/img/envelope.svg'
 import IconNumberOne from '../../assets/img/Number-One.svg'
 import IconNumberTwo from '../../assets/img/Number-Two.svg'
 import IconArrowInCircle from '../../assets/img/arr-in-circle.svg'
-import imgAnim from '../../assets/img/main-screen-animation-1.gif'
+import imgAnim from '../../assets/img/main-screen-animation-1-large.gif'
 
 const advList = [
 	{

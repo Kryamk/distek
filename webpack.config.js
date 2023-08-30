@@ -11,13 +11,19 @@ module.exports = {
 	mode,
 	target,
 	devtool,
+	// cache: false,
 	devServer: {
 		static: {
 			directory: path.join(__dirname, './dist'),
+			watch: {
+				ignored: /node_modules/,
+			},
 		},
 		port: 3000,
+		// hot: true,
 		open: true,
 		historyApiFallback: true,
+		// watchFiles: "src/**/*",
 	},
 	entry: path.resolve(__dirname, 'src', 'index.js'),
 	output: {

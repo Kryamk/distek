@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react";
 export function useOutsideClickMenu(elementRef, btnRef, handler, attached = true) {
 
 	useEffect(() => {
-		console.log('outside')
 		if (!attached) return;
 
 		const handleClick = (e) => {
