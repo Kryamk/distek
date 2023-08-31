@@ -1,0 +1,203 @@
+.dealer {
+	padding: 44px 40px 20px 40px;
+	border-radius: 20px;
+	margin: 50px 0;
+	background: url('@assets/img/map.png') no-repeat var(--gray-scale-sixtary, #FFF);
+	// background-position: 730px -315px;
+	// background-position: 100% 56%;
+	background-position: min(38vw, 730px) 56%;
+}
+.dealerInner {
+	max-width: 560px;
+}
+.title {
+	color: var(--gray-scale-primary, #393838);
+	font-family: Montserrat;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 106%;
+	margin-bottom: 62px;
+}
+.cities {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 6px 70px;
+	margin-bottom: 224px;
+}
+.city {
+	color: var(--gray-scale-primary, #393838);
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	background: url('../../assets/img/list-marker-blue.svg') 0 0 no-repeat;
+	background-size: 16px 16px;
+	padding-left: 35px;
+}
+.contactsList {
+	counter-reset: list;
+}
+.contactsItem {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 7px 0px 20px 28px;
+	gap: 10px 30px;
+	border-top: 1px solid #bdbec1;
+}
+.contactsItem:before {
+	content: '0' counter(list);
+	counter-increment: list;
+	position: absolute;
+	top: 7px;
+	left: 0;
+	color: var(--gray-scale-primary, #393838);
+	font-family: Montserrat;
+	font-size: 8px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	text-transform: uppercase;
+}
+
+.contactsText {
+	color: var(--gray-scale-primary, #393838);
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1;
+	font-variant: all-small-caps;
+}
+.contactsSubtext {
+	display: block;
+	color: var(--gray-scale-secondary, #6A6B74);
+	font-family: Roboto;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 106%;
+	font-variant: normal;
+	margin-bottom: 10px;
+}
+a.contactsText {
+	transition: color ease-in-out .3s;
+}
+a.contactsText:hover {
+	color: var(--brand-blue-primary-light, #197ACF);
+}
+
+.btn {
+	all: unset;
+	position: relative;
+	width: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	padding: 8px 24px;
+	border-radius: 6px;
+	background: transparent;
+	cursor: pointer;
+	.btnText {
+		position: relative;
+		color: var(--gray-scale-sixtary, #FFF);
+		font-family: Roboto;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 106%;
+		font-variant: all-small-caps;
+		z-index: 1;
+	}
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+	&::before {
+		background: var(--gradients-gradient-blue-button, linear-gradient(50deg, #30B3ED 0%, #299EE2 27.76%, #258BD7 55.69%, #44A1E0 78.00%, #51A8E3 100%));
+	}
+	&::after {
+		background: var(--gradients-blue-button-hover, linear-gradient(315deg, #30B3ED 0%, #299EE2 27.76%, #258BD7 55.69%, #44A1E0 78.00%, #51A8E3 100%));
+		opacity: 0;
+		transition: .3s opacity ease-in-out;
+	}
+	&:hover::after {
+		opacity: 1;
+	}
+	&[disabled] {
+		background: var(--gray-scale-quaternary, #BDBEC1);
+	}
+}
+
+@media (max-width: 1199px) {
+	.dealer {
+		padding: 20px 20px 15px;
+		border-radius: 16px;
+		margin: 70px 0;
+	}
+	.title {
+		font-size: 32px;
+		line-height: 90%;
+		letter-spacing: -0.32px;
+	}
+}
+@media (max-width: 991px) {
+	.dealer {
+		background-position: left bottom;
+		background-size: 1025px;
+	}
+	.dealerInner {
+		max-width: none;
+	}
+	.title {
+		max-width: 400px;
+		margin-bottom: 71px;
+	}
+	.cities {
+		max-width: 450px;
+		gap: 6px 20px;
+		margin-bottom: 910px;
+	}
+}
+@media (max-width: 743px) {
+	.dealer {
+		padding: 10px;
+		border-radius: 8px;
+		background-image: none;
+	}
+	.title {
+		font-size: 23px;
+		letter-spacing: -0.23px;
+		max-width: 250px;
+		margin-bottom: 44px;
+	}
+	.cities {
+		gap: 12px 19px;
+		margin-bottom: 130px;
+	}
+	.city {
+		font-size: 14px;
+		line-height: 100%;
+	}
+	.contactsItem {
+		padding: 7px 0px 17px 28px;
+	}
+}
+@media (max-width: 577px) {
+	.contactsSubtext {
+		margin: 2px 0 0 0;
+	}
+	.btn {
+		margin-bottom: 23px;
+	}
+}
