@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './features/header/Header';
-import Hero from './features/hero/Hero';
-import Software from './features/software/Software';
-import Dealer from './features/dealer/Dealer';
+import Header from '@components/header/Header';
+import Hero from './pages/main/hero/Hero';
+import Software from './pages/main/software/Software';
+import Dealer from './pages/main/dealer/Dealer';
 
 function App() {
 	return (

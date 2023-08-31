@@ -9,3 +9,12 @@
 	--gradients-gradient-blue-button: linear-gradient(50deg, #30B3ED 0%, #299EE2 27.76%, #258BD7 55.69%, #44A1E0 78.00%, #51A8E3 100%);
 	--gradients-blue-button-hover: linear-gradient(315deg, #30B3ED 0%, #299EE2 27.76%, #258BD7 55.69%, #44A1E0 78.00%, #51A8E3 100%);
 }
+
+
+$baseFontSize : 16px;
+@function pxToRem($pixels) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+	@return (calc($pixels / $baseFontSize)) * 1rem;
+}

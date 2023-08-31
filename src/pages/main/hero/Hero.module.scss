@@ -1,3 +1,6 @@
+@import '@assets/style/components';
+
+
 .heroTop {
 	padding: 23px 40px 25px 35px;
 	border-radius: 20px;
@@ -14,18 +17,18 @@
 	max-width: 850px;
 	color: var(--gray-scale-primary, #393838);
 	font-family: Montserrat;
-	font-size: 55px;
+	font-size: pxToRem(55);
 	font-style: normal;
 	font-weight: 600;
 	line-height: 100%;
 	letter-spacing: -0.55px;
 }
 .subTitle {
-	width: 160px;
+	max-width: 160px;
 	flex-shrink: 0;
 	color: var(--gray-scale-tetriary, #8A8B94);
 	font-family: Roboto;
-	font-size: 16px;
+	font-size: pxToRem(16);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 100%;
@@ -71,7 +74,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url('./../../assets/img/bg-partners.png') bottom right no-repeat;
+	background: url('@assets/img/bg-partners.png') bottom right no-repeat;
 	opacity: 0;
 	border-radius: inherit;
 	transition: opacity ease-in-out .3s;
@@ -124,7 +127,7 @@
 .colTitle {
 	color: var(--gray-scale-primary, #393838);
 	font-family: Montserrat;
-	font-size: 28px;
+	font-size: pxToRem(28);
 	font-style: normal;
 	font-weight: 600;
 	line-height: 106%;
@@ -145,7 +148,7 @@
 .colMailText {
 	color: var(--brand-blue-primary-light, #197ACF);
 	font-family: Roboto;
-	font-size: 16px;
+	font-size: pxToRem(16);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 92%;
@@ -165,7 +168,7 @@
 .advantagesTitle {
 	color: var(--gray-scale-tetriary, #8A8B94);
 	font-family: Roboto;
-	font-size: 16px;
+	font-size: pxToRem(16);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 100%;
@@ -194,7 +197,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url('./../../assets/img/bg-users.png') bottom right no-repeat;
+	background: url('@assets/img/bg-users.png') bottom right no-repeat;
 	opacity: 0;
 	border-radius: inherit;
 	transition: opacity ease-in-out .3s;
@@ -202,7 +205,7 @@
 .colText {
 	color: var(--gray-scale-primary, #393838);
 	font-family: Roboto;
-	font-size: 18px;
+	font-size: pxToRem(18);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 120%;
@@ -230,7 +233,7 @@
 .colLinkText {
 	color: var(--brand-blue-primary-light, #197ACF);
 	font-family: Roboto;
-	font-size: 15px;
+	font-size: pxToRem(15);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 106%;
@@ -250,7 +253,7 @@
 	}
 	.title {
 		max-width: 700px;
-		font-size: 40px;
+		font-size: pxToRem(40);
 		line-height: 90%;
 		letter-spacing: -0.4px;
 	}
@@ -270,7 +273,7 @@
 	}
 	.colPartners::before {
 		opacity: 1;
-		background: url('./../../assets/img/bg-partners-tablet.png') bottom right no-repeat;
+		background: url('@assets/img/bg-partners-tablet.png') bottom right no-repeat;
 	}
 	.colPartners .colHeaderInner {
 		flex-direction: row;
@@ -289,7 +292,7 @@
 	}
 
 	.colTitle {
-		font-size: 25px;
+		font-size: pxToRem(25);
 	}
 	.colMail {
 		margin-top: 0;
@@ -352,12 +355,12 @@
 	}
 	.title {
 		max-width: 500px;
-		font-size: 27px;
+		font-size: pxToRem(27);
 		line-height: 100%;
 		letter-spacing: -0.27px;
 	}
 	.subTitle {
-		font-size: 15px;
+		font-size: pxToRem(15);
 		line-height: 100%;
 	}
 
@@ -383,7 +386,7 @@
 		justify-content: space-between;
 	}
 	.colTitle {
-		font-size: 20px;
+		font-size: pxToRem(20);
 	}
 	.colMail {
 		margin-top: 12px;
@@ -408,7 +411,7 @@
 	}
 
 	.colText {
-		font-size: 15px;
+		font-size: pxToRem(15);
 		line-height: 106%;
 		margin-top: 46px;
 	}

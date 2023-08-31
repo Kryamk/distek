@@ -1,24 +1,22 @@
 @import './fonts';
-@import 'var';
+@import 'components';
+
 
 *, *::before, *::after {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
-
 body {
 	background: #F1F1F1;
-	// background: url('favicon.ico');
 	color: rgb(255, 255, 255);
-	user-select: none;
 	min-height: 100Vh;
+	font-family: Roboto;
 	padding-bottom: 500px;
 }
 body.lock {
 	overflow: hidden;
 }
-
 li {
 	list-style-type: none;
 }

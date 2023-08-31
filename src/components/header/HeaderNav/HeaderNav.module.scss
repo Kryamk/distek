@@ -1,6 +1,9 @@
+@import '@assets/style/components';
+
+
 .navList {
 	display: flex;
-	gap: 10px calc(75/1920*100vw);
+	gap: 10px 75px;
 	// gap: 10px 75px;
 	flex-wrap: wrap;
 }
@@ -18,7 +21,7 @@
 .navText {
 	color: var(--gray-scale-primary, #393838);
 	font-family: Roboto;
-	font-size: 20px;
+	font-size: pxToRem(20);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 95%;

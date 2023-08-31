@@ -1,7 +1,9 @@
+@import '@assets/style/components';
+
+
 .headerWrap {
 	margin: 15px 0;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	gap: 11px;
 }
@@ -35,7 +37,7 @@
 	border-radius: 10px;
 	color: var(--gray-scale-sixtary, #FFF);
 	font-family: Roboto;
-	font-size: 17px;
+	font-size: pxToRem(17);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 106%;
@@ -73,7 +75,7 @@
 @media (max-width: 370px) {
 	.btn {
 		padding: 10px 15px;
-		font-size: 15px;
+		font-size: pxToRem(15);
 	}
 }
 

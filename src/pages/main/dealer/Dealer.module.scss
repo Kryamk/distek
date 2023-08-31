@@ -1,3 +1,6 @@
+@import '@assets/style/components';
+
+
 .dealer {
 	padding: 44px 40px 20px 40px;
 	border-radius: 20px;
@@ -13,7 +16,7 @@
 .title {
 	color: var(--gray-scale-primary, #393838);
 	font-family: Montserrat;
-	font-size: 45px;
+	font-size: pxToRem(45);
 	font-style: normal;
 	font-weight: 600;
 	line-height: 106%;
@@ -28,11 +31,11 @@
 .city {
 	color: var(--gray-scale-primary, #393838);
 	font-family: Roboto;
-	font-size: 18px;
+	font-size: pxToRem(18);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 120%;
-	background: url('../../assets/img/list-marker-blue.svg') 0 0 no-repeat;
+	background: url('@assets/img/list-marker-blue.svg') 0 0 no-repeat;
 	background-size: 16px 16px;
 	padding-left: 35px;
 }
@@ -57,7 +60,7 @@
 	left: 0;
 	color: var(--gray-scale-primary, #393838);
 	font-family: Montserrat;
-	font-size: 8px;
+	font-size: pxToRem(8);
 	font-style: normal;
 	font-weight: 700;
 	line-height: 110%;
@@ -67,7 +70,7 @@
 .contactsText {
 	color: var(--gray-scale-primary, #393838);
 	font-family: Roboto;
-	font-size: 18px;
+	font-size: pxToRem(18);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 1;
@@ -77,7 +80,7 @@
 	display: block;
 	color: var(--gray-scale-secondary, #6A6B74);
 	font-family: Roboto;
-	font-size: 15px;
+	font-size: pxToRem(15);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 106%;
@@ -107,7 +110,7 @@ a.contactsText:hover {
 		position: relative;
 		color: var(--gray-scale-sixtary, #FFF);
 		font-family: Roboto;
-		font-size: 15px;
+		font-size: pxToRem(15);
 		font-style: normal;
 		font-weight: 500;
 		line-height: 106%;
@@ -146,7 +149,7 @@ a.contactsText:hover {
 		margin: 70px 0;
 	}
 	.title {
-		font-size: 32px;
+		font-size: pxToRem(32);
 		line-height: 90%;
 		letter-spacing: -0.32px;
 	}
@@ -176,7 +179,7 @@ a.contactsText:hover {
 		background-image: none;
 	}
 	.title {
-		font-size: 23px;
+		font-size: pxToRem(23);
 		letter-spacing: -0.23px;
 		max-width: 250px;
 		margin-bottom: 44px;
@@ -186,7 +189,7 @@ a.contactsText:hover {
 		margin-bottom: 130px;
 	}
 	.city {
-		font-size: 14px;
+		font-size: pxToRem(14);
 		line-height: 100%;
 	}
 	.contactsItem {

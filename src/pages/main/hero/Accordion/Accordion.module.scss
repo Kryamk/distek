@@ -1,3 +1,6 @@
+@import '@assets/style/components';
+
+
 .accordion {
 	max-width: 560px;
 	counter-reset: list;
@@ -17,7 +20,7 @@
 	left: 0;
 	color: var(--gray-scale-primary, #393838);
 	font-family: Montserrat;
-	font-size: 8px;
+	font-size: pxToRem(8);
 	font-style: normal;
 	font-weight: 700;
 	line-height: 110%;
@@ -35,7 +38,7 @@
 .accordionHeader__text {
 	color: var(--gray-scale-primary, #393838);
 	font-family: Roboto;
-	font-size: 18px;
+	font-size: pxToRem(18);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 110%;
@@ -82,7 +85,7 @@
 	padding: 0 9px 20px 26px;
 	color: var(--gray-scale-primary, #393838);
 	font-family: Roboto;
-	font-size: 14px;
+	font-size: pxToRem(14);
 	font-style: normal;
 	font-weight: 400;
 }

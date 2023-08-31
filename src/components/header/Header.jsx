@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import sl from './Header.module.scss'
-// import Remove from '../../assets/img/icon-remove.svg'
-
 import imgLogo from '../../assets/img/logo.png'
 import HeaderBurger from './HeaderBurger/HeaderBurger'
 import HeaderNav from './HeaderNav/HeaderNav'

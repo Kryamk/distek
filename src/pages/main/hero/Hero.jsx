@@ -1,16 +1,12 @@
 import React from 'react'
 import sl from './Hero.module.scss'
 import { Accordion } from './Accordion/Accordion'
-import ArrorCorner from '../../assets/img/arr-corner.svg'
-import LogoSketchup from '../../assets/img/logo-sketchup.svg'
-import LogoTekla from '../../assets/img/logo-tekla.svg'
-import LogoTrimble from '../../assets/img/logo-trimble.svg'
-import IconEnvelope from '../../assets/img/envelope.svg'
-import IconNumberOne from '../../assets/img/Number-One.svg'
-import IconNumberTwo from '../../assets/img/Number-Two.svg'
-import IconArrowInCircle from '../../assets/img/arr-in-circle.svg'
-import imgAnim from '../../assets/img/main-screen-animation-1-large.gif'
-import LinkWithLogo from '../../components/LinkWithLogo/LinkWithLogo'
+import IconEnvelope from '@assets/img/envelope.svg'
+import IconNumberOne from '@assets/img/Number-One.svg'
+import IconNumberTwo from '@assets/img/Number-Two.svg'
+import IconArrowInCircle from '@assets/img/arr-in-circle.svg'
+import imgAnim from '@assets/img/main-screen-animation-1-large.gif'
+import LinkWithLogo from '@components/LinkWithLogo/LinkWithLogo'
 
 const advList = [
 	{

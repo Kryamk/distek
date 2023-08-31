@@ -1,16 +1,13 @@
 import React from 'react'
 import sl from './Software.module.scss'
-import ArrorCorner from '@assets/img/arr-corner.svg'
-import LogoSketchup from '@assets/img/logo-sketchup.svg'
-import LogoTekla from '@assets/img/logo-tekla.svg'
-import LogoTrimble from '@assets/img/logo-trimble.svg'
 import IconNumberOne from '@assets/img/Number-One.svg'
 import IconNumberTwo from '@assets/img/Number-Two.svg'
 import IconNumberThree from '@assets/img/Number-Three.svg'
 import imgAnim3d from '@assets/img/main-screen-animation-2.gif'
 import imgAnimDetail from '@assets/img/main-screen-animation-3.gif'
 import imgAnimInfo from '@assets/img/main-screen-animation-1.gif'
-import LinkWithLogo from '../../components/LinkWithLogo/LinkWithLogo'
+import LinkWithLogo from '@components/LinkWithLogo/LinkWithLogo'
+
 
 
 
@@ -27,7 +24,6 @@ export default function Software() {
 
 				<div className={sl.softwareBottom}>
 
-
 					<div className={`${sl.col}`}>
 						<div className={sl.colHeader}>
 							<div className={sl.colNum}>
@@ -37,11 +33,9 @@ export default function Software() {
 								<h3 className={sl.colTitle}>Эскизное 3d&#8209;моделирование</h3>
 							</div>
 						</div>
-
 						<div className={sl.imgWrap}>
 							<img className={sl.img} src={imgAnim3d} alt="" />
 						</div>
-
 						<div className={sl.links}>
 							<LinkWithLogo variant='sketchup' />
 						</div>
@@ -103,12 +97,7 @@ export default function Software() {
 						</ul>
 					</div>
 
-
 				</div>
-
-
-
-
 
 			</div>
 		</section>
