@@ -1,0 +1,147 @@
+@import '@assets/style/components';
+
+
+.subscribe {
+	border-radius: 20px;
+	background: var(--gray-scale-sixtary, #FFF);
+	// padding: 33px 40px 39px;
+}
+.subscribeTitle {
+	color: var(--gray-scale-secondary, #6A6B74);
+	font-family: Montserrat;
+	font-size: pxToRem(20);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 106%;
+	text-transform: lowercase;
+	margin-bottom: 14px;
+}
+.subscribeForm {
+	display: flex;
+	border-radius: 10px;
+	border: 1px solid var(--gray-scale-quaternary, #BDBEC1);
+	margin-bottom: 12px;
+	transition: border-color ease-in-out .3s;
+}
+.subscribeForm.isInvalid {
+	border-color: red;
+}
+.subscribeInput {
+	all: unset;
+	flex-grow: 1;
+	color: var(--gray-scale-secondary, #6A6B74);
+	font-family: Roboto;
+	font-size: pxToRem(17);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 106%;
+	font-variant: all-small-caps;
+	padding: 15px 20px;
+}
+.subscribeInput::placeholder {
+	color: var(--gray-scale-quaternary, #BDBEC1);
+	font-family: Roboto;
+	font-size: pxToRem(17);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 106%;
+	font-variant: all-small-caps;
+	transition: color ease-in-out .3s;
+}
+.subscribeInput.isInvalid::placeholder {
+	color: red;
+}
+.subscribeSubmit {
+	all: unset;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 9px;
+	cursor: pointer;
+}
+.subscribeText {
+	color: var(--gray-scale-secondary, #6A6B74);
+	text-align: right;
+	font-family: Roboto;
+	font-size: pxToRem(15);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 106%;
+	font-variant: all-small-caps;
+	transition: color ease-in-out .3s;
+}
+.subscribeSubmit:hover .subscribeText {
+	color: var(--brand-blue-primary-light, #197ACF);
+}
+.subscribeSubmitArrow {
+	width: 30px;
+	height: 30px;
+	flex-shrink: 0;
+	fill: var(--gray-scale-secondary, #6A6B74);
+	transform: rotate(-90deg);
+}
+.subscribeSubmit:hover .subscribeSubmitArrow {
+	fill: url(#arr-in-circle_svg__a);
+	transition: fill ease-in-out .3s;
+}
+.subscribeSubmit[disabled] {
+	cursor: default;
+}
+.subscribeSubmit[disabled] .subscribeText {
+	color: var(--gray-scale-quaternary, #BDBEC1);
+}
+.subscribeSubmit[disabled] .subscribeSubmitArrow {
+	fill: var(--gray-scale-quaternary, #BDBEC1);
+}
+
+.subscribePolitic {
+	color: var(--gray-scale-secondary, #6A6B74);
+	font-family: Roboto;
+	font-size: pxToRem(12);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: lowercase;
+}
+.subscribePolitic a {
+	color: var(--brand-blue-primary-light, #197ACF);
+	transition: color ease-in-out .3s;
+}
+.subscribePolitic a:hover {
+	color: var(--gray-scale-secondary, #6A6B74);
+}
+
+
+
+@media (max-width: 1199px) {
+	.subscribe {
+		border-radius: 16px;
+		// padding: 32px 20px 39px;
+	}
+	.subscribeForm {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 743px) {
+	.subscribe {
+		border-radius: 8px;
+		// padding: 0 10px 20px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	.subscribeTitle {
+		font-size: pxToRem(16);
+		margin-bottom: 10px;
+	}
+	.subscribeText {
+		display: none;
+	}
+	.subscribeSubmitArrow {
+		width: 20px;
+		height: 20px;
+	}
+	.subscribeInput {
+		padding: 10px;
+	}
+}

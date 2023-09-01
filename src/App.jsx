@@ -4,6 +4,7 @@ import Hero from './pages/main/hero/Hero';
 import Software from './pages/main/software/Software';
 import Dealer from './pages/main/dealer/Dealer';
 import News from './pages/main/news/News';
+import Footer from './components/footer/Footer';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<Software />
 			<Dealer />
 			<News />
+			<Footer />
 		</div>
 	);
 }

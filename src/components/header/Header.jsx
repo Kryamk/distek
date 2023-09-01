@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import sl from './Header.module.scss'
-import imgLogo from '../../assets/img/logo.png'
+import imgLogo from '@assets/img/logo.png'
 import HeaderBurger from './HeaderBurger/HeaderBurger'
 import HeaderNav from './HeaderNav/HeaderNav'
 
