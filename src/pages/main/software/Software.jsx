@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import sl from './Software.module.scss'
 import IconNumberOne from '@assets/img/Number-One.svg'
 import IconNumberTwo from '@assets/img/Number-Two.svg'
@@ -10,8 +10,68 @@ import LinkWithLogo from '@components/LinkWithLogo/LinkWithLogo'
 
 
 
-
 export default function Software() {
+
+	let softwareRef = useRef()
+
+	useEffect(() => {
+		const element = softwareRef?.current;
+
+		if (!element) return;
+
+		const observer = new ResizeObserver((e) => {
+
+			window.requestAnimationFrame(() => {
+				let cols = [...document.querySelectorAll('.' + sl.col)]
+
+				let arrHeightLinks = []
+				let arrHeightDesc = []
+
+				cols.forEach(col => {
+					let linksItem = col.querySelector('.' + sl.links)
+					linksItem.style.minHeight = ''
+
+					let descList = col.querySelector('.' + sl.descList)
+					descList.style.minHeight = ''
+				})
+
+				if (window.innerWidth < 1199) {
+					cols = cols.slice(0, cols.length - 1)
+				}
+				if (window.innerWidth < 992) return
+
+
+				cols.forEach(col => {
+					let linksItem = col.querySelector('.' + sl.links)
+					let heighLinksItemt = linksItem.clientHeight
+					linksItem.style.minHeight = ''
+					arrHeightLinks.push(heighLinksItemt)
+
+					let descList = col.querySelector('.' + sl.descList)
+					let height = descList.clientHeight
+					descList.style.minHeight = ''
+					arrHeightDesc.push(height)
+				})
+				cols.forEach(col => {
+					let linksItem = col.querySelector('.' + sl.links)
+					linksItem.style.minHeight = Math.max(...arrHeightLinks) + 'px'
+
+					let descList = col.querySelector('.' + sl.descList)
+					descList.style.minHeight = Math.max(...arrHeightDesc) + 'px'
+				})
+
+			});
+
+		});
+
+		observer.observe(element);
+
+		return () => {
+			observer.disconnect();
+		};
+	}, [])
+
+
 	return (
 		<section>
 			<div className="container">
@@ -22,7 +82,7 @@ export default function Software() {
 					</div>
 				</div>
 
-				<div className={sl.softwareBottom}>
+				<div className={sl.softwareBottom} ref={softwareRef}>
 
 					<div className={`${sl.col}`}>
 						<div className={sl.colHeader}>

@@ -37,6 +37,8 @@
 	line-height: 106%;
 	font-variant: all-small-caps;
 	padding: 15px 20px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 .subscribeInput::placeholder {
 	color: var(--gray-scale-quaternary, #BDBEC1);

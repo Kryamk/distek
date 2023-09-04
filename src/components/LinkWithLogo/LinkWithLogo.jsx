@@ -1,6 +1,6 @@
 import React from 'react'
 import sl from './LinkWithLogo.module.scss'
-import ArrorCorner from '@assets/img/arr-corner.svg'
+import IconArrorCornerRight from '@assets/img/arr-corner-right.svg'
 import LogoSketchup from '@assets/img/logo-sketchup.svg'
 import LogoTekla from '@assets/img/logo-tekla.svg'
 import LogoTrimble from '@assets/img/logo-trimble.svg'
@@ -37,7 +37,7 @@ export default function LinkWithLogo({ variant, className = '' }) {
 				{svg}
 			</div>
 			<span className={sl.text}>{text}</span>
-			<ArrorCorner className={sl.arrow} />
+			<IconArrorCornerRight className={sl.arrow} />
 		</a>
 	)
 }

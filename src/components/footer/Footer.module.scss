@@ -68,7 +68,6 @@
 	width: 18px;
 	height: 18px;
 	flex-shrink: 0;
-	transform: rotate(-90deg);
 	transition: fill ease-in-out .3s;
 }
 .navLink:hover .navIcon {
@@ -86,10 +85,6 @@
 .navItem:first-child .navIcon {
 	width: 20px;
 	height: 20px;
-	transform: scaleX(-1) rotate(180deg);
-}
-.colNav2 .navIcon {
-	transform: scaleX(-1) rotate(180deg);
 }
 
 .btn {
@@ -255,8 +250,10 @@
 			"... colNav2"
 			"colSubscribe colSubscribe";
 	}
+	.subscribeWrap {
+		padding-top: 15px;
+	}
 	.btn {
-		max-width: 350px;
 		flex-grow: 1;
 	}
 	.socLink {
@@ -313,6 +310,12 @@
 		padding: 10px;
 		background: var(--gray-scale-sixtary, #FFF);
 	}
+	.navItem {
+		padding-bottom: 8px;
+	}
+	.subscribeWrap {
+		padding: 0
+	}
 }
 @media (max-width: 577px) {
 	.footerTop {
@@ -345,5 +348,20 @@
 	}
 	.navItem:first-child {
 		padding-bottom: 25px;
+	}
+}
+@media (max-width: 374px) {
+	.contactsItem {
+		font-size: pxToRem(12);
+		padding: 0 10px;
+	}
+	.socList {
+		flex-grow: 1;
+		justify-content: stretch;
+	}
+	.socLink {
+		display: flex;
+		justify-content: center;
+		flex-grow: 1;
 	}
 }

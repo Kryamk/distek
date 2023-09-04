@@ -1,7 +1,8 @@
 import React from 'react'
 import sl from './Footer.module.scss'
 import imgLogo from '@assets/img/logo.png'
-import IconArrorCorner from '@assets/img/arr-corner.svg'
+import IconArrorCornerRight from '@assets/img/arr-corner-right.svg'
+import IconArrorCornerUp from '@assets/img/arr-corner-up.svg'
 import Subscribe from '../subscribe/Subscribe'
 import IconFb from '@assets/img/facebook.svg'
 import IconVk from '@assets/img/vk.svg'
@@ -28,31 +29,31 @@ export default function Footer() {
 							<li className={sl.navItem}>
 								<a className={sl.navLink} href="#">
 									<span className={sl.navText}>программное обеспечение</span>
-									<IconArrorCorner className={sl.navIcon} />
+									<IconArrorCornerUp className={sl.navIcon} />
 								</a>
 							</li>
 							<li className={sl.navItem}>
 								<a className={sl.navLink} href="#">
 									<span className={sl.navText}>Sketchup</span>
-									<IconArrorCorner className={sl.navIcon} />
+									<IconArrorCornerRight className={sl.navIcon} />
 								</a>
 							</li>
 							<li className={sl.navItem}>
 								<a className={sl.navLink} href="#">
 									<span className={sl.navText}>tekla structures</span>
-									<IconArrorCorner className={sl.navIcon} />
+									<IconArrorCornerRight className={sl.navIcon} />
 								</a>
 							</li>
 							<li className={sl.navItem}>
 								<a className={sl.navLink} href="#">
 									<span className={sl.navText}>Tekla model sharing</span>
-									<IconArrorCorner className={sl.navIcon} />
+									<IconArrorCornerRight className={sl.navIcon} />
 								</a>
 							</li>
 							<li className={sl.navItem}>
 								<a className={sl.navLink} href="#">
 									<span className={sl.navText}>Trimble connect</span>
-									<IconArrorCorner className={sl.navIcon} />
+									<IconArrorCornerRight className={sl.navIcon} />
 								</a>
 							</li>
 						</ul>
@@ -63,13 +64,13 @@ export default function Footer() {
 							<li className={sl.navItem}>
 								<a className={sl.navLink} href="#">
 									<span className={sl.navText}>О нас</span>
-									<IconArrorCorner className={sl.navIcon} />
+									<IconArrorCornerUp className={sl.navIcon} />
 								</a>
 							</li>
 							<li className={sl.navItem}>
 								<a className={sl.navLink} href="#">
 									<span className={sl.navText}>Новости</span>
-									<IconArrorCorner className={sl.navIcon} />
+									<IconArrorCornerUp className={sl.navIcon} />
 								</a>
 							</li>
 						</ul>

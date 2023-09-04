@@ -5,6 +5,7 @@ import imgNews1 from '@assets/img/news1.jpg'
 import imgNews2 from '@assets/img/news2.jpg'
 import imgNews3 from '@assets/img/news3.jpg'
 import imgNews4 from '@assets/img/news4.jpg'
+import Subscribe from '../../../components/subscribe/Subscribe'
 
 export default function News() {
 	let errorInput = false
@@ -19,7 +20,11 @@ export default function News() {
 						<div className={sl.subTitle}>самое актуальное на сегодняшний день в&nbsp;мире bim-проектирования</div>
 					</div>
 
-					<div className={sl.subscribe}>
+					<div className={sl.subscribeWrap}>
+						<Subscribe />
+					</div>
+
+					{/* <div className={sl.subscribe}>
 						<div className={sl.subscribeTitle}>подпишитесь на наши новости</div>
 						<form className={`${sl.subscribeForm} ${errorInput ? sl.isInvalid : ''}`}>
 							<input className={`${sl.subscribeInput} ${errorInput ? sl.isInvalid : ''}`} type="text" placeholder='your@email.ru' />
@@ -29,7 +34,7 @@ export default function News() {
 							</button>
 						</form>
 						<div className={sl.subscribePolitic} >Отправляя заполненную форму, вы принимаете условия <a href="#">Политики обработки персональных данных</a> и подписываете <a href="#">Заявление-согласие субъекта</a> на&nbsp;передачу его персональных данных третьей стороне.</div>
-					</div>
+					</div> */}
 
 				</div>
 
