@@ -226,9 +226,6 @@
 .colLinkIcon stop {
 	transition: stop-color ease-in-out .3s;
 }
-.colLink:hover .colLinkIcon stop {
-	stop-color: var(--gray-scale-primary, #393838);
-}
 
 .colLinkText {
 	color: var(--brand-blue-primary-light, #197ACF);

@@ -142,17 +142,10 @@
 	height: 30px;
 	flex-shrink: 0;
 	transform: rotate(-90deg);
-	fill: var(--gray-scale-primary, #393838);
 }
-.cardLink:hover .cardLinkIcon {
-	fill: url(#arr-in-circle_svg__a);
+.cardLinkIcon stop {
+	transition: stop-color ease-in-out .3s;
 }
-// .cardLinkIcon stop {
-// 	transition: stop-color ease-in-out .3s;
-// }
-// .cardLink:hover .cardLinkIcon stop {
-// 	stop-color: var(--gray-scale-primary, #393838);
-// }
 
 @media (max-width: 1199px) {
 	.titleWrap {

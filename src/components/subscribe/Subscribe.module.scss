@@ -79,12 +79,13 @@
 	width: 30px;
 	height: 30px;
 	flex-shrink: 0;
-	fill: var(--gray-scale-secondary, #6A6B74);
 	transform: rotate(-90deg);
 }
 .subscribeSubmit:hover .subscribeSubmitArrow {
-	fill: url(#arr-in-circle_svg__a);
 	transition: fill ease-in-out .3s;
+}
+.subscribeSubmitArrow stop {
+	transition: stop-color ease-in-out .3s;
 }
 .subscribeSubmit[disabled] {
 	cursor: default;
@@ -92,9 +93,14 @@
 .subscribeSubmit[disabled] .subscribeText {
 	color: var(--gray-scale-quaternary, #BDBEC1);
 }
-.subscribeSubmit[disabled] .subscribeSubmitArrow {
-	fill: var(--gray-scale-quaternary, #BDBEC1);
+.subscribeSubmit[disabled] .subscribeSubmitArrow stop {
+	stop-color: var(--gray-scale-quaternary, #BDBEC1);
 }
+
+
+
+
+
 
 .subscribePolitic {
 	color: var(--gray-scale-secondary, #6A6B74);

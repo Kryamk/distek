@@ -6,9 +6,16 @@ import imgNews2 from '@assets/img/news2.jpg'
 import imgNews3 from '@assets/img/news3.jpg'
 import imgNews4 from '@assets/img/news4.jpg'
 import Subscribe from '../../../components/subscribe/Subscribe'
+import NewsItem from './NewsItem'
+
+const cards = [
+	{ id: 1, img: imgNews1, data: '09.02.2022', desc: 'Вебинар «Опыт AFRY: от предпроекта до&nbsp;выпуска рабочей документации. Как достичь высокой производительности работ?»' },
+	{ id: 2, img: imgNews1, data: '03.02.2022', desc: 'Квиз-тест по SketchUp! Получи сертификат c&nbsp;указанием уровня владения программой' },
+	{ id: 3, img: imgNews1, data: '21.01.2022', desc: 'Вебинар «Опыт AFRY: от предпроекта до&nbsp;выпуска рабочей документации. Как достичь высокой производительности работ?» ' },
+	{ id: 4, img: imgNews1, data: '21.01.2022', desc: 'Квиз-тест по SketchUp! Получи сертификат c&nbsp;указанием уровня владения программой' },
+]
 
 export default function News() {
-	let errorInput = false
 	return (
 		<section>
 			<div className="container">
@@ -24,22 +31,13 @@ export default function News() {
 						<Subscribe />
 					</div>
 
-					{/* <div className={sl.subscribe}>
-						<div className={sl.subscribeTitle}>подпишитесь на наши новости</div>
-						<form className={`${sl.subscribeForm} ${errorInput ? sl.isInvalid : ''}`}>
-							<input className={`${sl.subscribeInput} ${errorInput ? sl.isInvalid : ''}`} type="text" placeholder='your@email.ru' />
-							<button className={sl.subscribeSubmit}>
-								<span className={sl.subscribeText}>Подписаться</span>
-								<IconArrowInCircle className={sl.subscribeSubmitArrow} />
-							</button>
-						</form>
-						<div className={sl.subscribePolitic} >Отправляя заполненную форму, вы принимаете условия <a href="#">Политики обработки персональных данных</a> и подписываете <a href="#">Заявление-согласие субъекта</a> на&nbsp;передачу его персональных данных третьей стороне.</div>
-					</div> */}
-
 				</div>
 
 				<div className={sl.newsCards}>
-					<div className={`${sl.card}`} style={{ backgroundImage: `url(${imgNews1})` }}>
+					{cards.map(card => (
+						<NewsItem key={card.id} img={card.img} data={card.data} desc={card.desc} />
+					))}
+					{/* <div className={`${sl.card}`} style={{ backgroundImage: `url(${imgNews1})` }}>
 						<div className={sl.cardHeader}>
 							<div className={sl.cardData}>09.02.2022</div>
 						</div>
@@ -48,6 +46,7 @@ export default function News() {
 							<a className={sl.cardLink} href='#'>
 								<div className={sl.cardLinkText} >подробнее на <span>distek.tekla.ru</span></div>
 								<IconArrowInCircle className={sl.cardLinkIcon} />
+
 							</a>
 						</div>
 					</div>
@@ -89,7 +88,7 @@ export default function News() {
 								<IconArrowInCircle className={sl.cardLinkIcon} />
 							</a>
 						</div>
-					</div>
+					</div> */}
 				</div>
 
 			</div>
